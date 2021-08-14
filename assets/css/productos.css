@@ -1,0 +1,132 @@
+.products-banner{
+    height: 150px;
+    width: 100%;
+    background-image: url("../../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-title{
+    text-align: center;
+    font-family: MadeTomyBold;
+    font-size: 24px;
+    margin: 0rem 0 1rem 0;
+    padding-top: 2rem;
+}
+#smoothies:before{
+    content: '';
+    padding-top: 3rem;
+}
+.product-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.product-unit{
+    flex-basis: 45%;
+    text-align: center;
+    margin-top: 15px;
+    transition: all 500ms;
+}
+.product-unit:hover{
+    box-shadow: 0px 3px 25px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.product-unit__img{
+    width: 100%;
+}
+.product-unit__title{
+    font-family: MadeTomyMedium;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(0,0,0);
+    margin: 4px 0;
+    border-radius: 4px;
+}
+.product-unit__text{
+    font-family: MadeTomyRegular;
+    margin: 4px 0 8px 0;
+    font-size: 14px;
+}
+.modal-header{
+    background-color: rgb(33, 37, 41);
+}
+.modal-title{
+    font-family: MadeTomyBold;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-left: 10px;
+}
+.close{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.close:hover{
+    color: white;
+}
+.modal-body{
+    padding: 1rem 0 0 0;
+}
+.product-unit__modal__img{
+    width: 100%;
+}
+@media screen and (min-width: 768px){
+    .products-banner{
+        height: 220px;
+    }
+    .product-title{
+        font-size: 36px;
+    }
+    .product-container{
+        padding: 0 2rem;
+    }
+    .product-unit{
+        flex-basis: 30%;
+    }
+    .product-unit__title{
+        font-size: 22px;
+    }
+    .product-unit__text{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 992px){
+    .products-banner{
+        height: 350px;
+    }
+    .product-title{
+        font-size: 48px;
+    }
+    .product-container{
+        padding: 0 5rem;
+    }
+    .product-unit{
+        flex-basis: 32%;
+        padding: 1rem;
+        padding-top: 0;
+    }
+    .product-unit__title{
+        font-size: 26px;
+    }
+    .product-unit__text{
+        font-size: 18px;
+    }
+    .modal-title{
+        font-size: 26px;
+        padding-left: 20px;
+    }
+    .close{
+        font-size: 2rem;
+    }
+    .modal-body{
+        padding: 1rem 1rem 0 1rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-container{
+        padding: 0 7rem;
+    }
+}

@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Grambler;
+    src: url("../fonts/Fenotype\ -\ GamblerBrs-Regular.otf");
+}
+@font-face {
+    font-family: MadeTomyBold;
+    src: url("../fonts/MADE\ Tommy\ Soft\ Bold\ PERSONAL\ USE.otf");
+}
+@font-face {
+    font-family: MadeTomyRegular;
+    src: url("../fonts/MADE\ Tommy\ Soft\ Regular\ PERSONAL\ USE.otf");
+}
+@font-face {
+    font-family: MadeTomyMedium;
+    src: url("../fonts/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.otf");
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+.header-992px{
+    display: none;
+}
+.header-mobile{
+    position: sticky;
+    top: 0;
+    padding: 0 inherit;
+    background-color: white;
+    z-index: 1000;
+}
+.header-views{
+    position: sticky;
+    top: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.logo-img{
+    width: 100px;
+}
+.navbar-nav{
+    font-family: MadeTomyRegular;
+    font-size: 18px;
+    line-height: 23px;
+    color: black;
+}
+footer{
+    background-color: black;
+    background-image: url("../../img/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer{
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.footer__logo{
+    flex-basis: 30%;
+}
+.footer__logo__img{
+    width: 100px;
+}
+.footer__block{
+    font-family: MadeTomyRegular;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0rem 1rem;
+    color: white;
+}
+.footer__block p{
+    color: white;
+    margin: 0.5rem 0rem;
+}
+@media screen and (min-width: 480px){
+    footer{
+        padding: 0.5rem 0;
+    }
+    .footer{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer-blocks{
+        flex-basis: 30%;
+    }
+    .footer__logo__img{
+        display: block;
+        width: 140px;
+        padding-right: 0px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 768px){
+    .navbar{
+        padding: 0 2rem;
+    }
+    .logo-img{
+        width: 120px;
+    }
+    .footer{
+        padding: 1rem 0;
+    }
+    .footer__logo{
+        flex-basis: 20%;
+    }
+    .footer__logo__img{
+        display: block;
+        width: 150px;
+        padding-right: 0px;
+        margin: 0 auto;
+    }
+    .footer-blocks{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+        flex-basis: 39%;
+    }
+    .footer__block{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+@media screen and (min-width: 992px){
+    .header-mobile{
+        display: none;
+    }
+    .section-img-a{
+        display: none;
+    }
+    .header-992px{
+        display: block;
+        background-image: url("../../img/section-a.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .header-section{
+        height: 100vh;
+    }
+    .nav-992px{
+        position: fixed;
+        top: 0;
+        padding: 0 inherit;
+        z-index: 1000;
+        width: 100%;
+        transition: background-color 200ms ease;
+    }
+    .scrolling-active{
+        background-color: white;
+    }
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+    .navbar{
+        padding: 0 1rem 0 2rem;
+    }
+    .navbar-brand{
+        width: 150px;
+    }
+    .logo-img{
+        width: 120px;
+        margin-left: 2rem;
+    }
+    .footer{
+        padding: 1.5rem 0;
+    }
+    .footer__block{
+        font-family: MadeTomyMedium;
+    }
+    .footer__block p{
+        font-size: 1rem;
+    }
+    .footer__block a:hover{
+        color: rgb(212, 241, 236);
+    }
+}
