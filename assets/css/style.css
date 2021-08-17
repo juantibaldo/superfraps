@@ -183,6 +183,6 @@ footer{
         font-size: 1rem;
     }
     .footer__block a:hover{
-        color: rgb(212, 241, 236);
+        text-shadow: 2px 2px 5px rgba(255,255,255,0.5);
     }
 }
