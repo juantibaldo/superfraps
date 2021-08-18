@@ -10,16 +10,14 @@
     font-family: MadeTomyBold;
     font-size: 24px;
     margin: 0rem 0 1rem 0;
-    padding-top: 2rem;
-}
-#smoothies:before{
-    content: '';
-    padding-top: 3rem;
+    padding-top: 100px;
+    margin-top: -80px;
 }
 .product-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    padding-bottom: 1rem;
 }
 .product-unit{
     flex-basis: 45%;
@@ -81,7 +79,7 @@
         font-size: 36px;
     }
     .product-container{
-        padding: 0 2rem;
+        padding: 0 2rem 1rem 2rem;
     }
     .product-unit{
         flex-basis: 30%;
@@ -101,7 +99,7 @@
         font-size: 48px;
     }
     .product-container{
-        padding: 0 5rem;
+        padding: 0 5rem 1rem 5rem;
     }
     .product-unit{
         flex-basis: 32%;
@@ -127,6 +125,6 @@
 }
 @media screen and (min-width: 1200px){
     .product-container{
-        padding: 0 7rem;
+        padding: 0 7rem 1rem 7rem;
     }
 }
