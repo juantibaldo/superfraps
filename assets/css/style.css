@@ -48,52 +48,68 @@ a:hover{
 }
 .navbar-nav{
     font-family: MadeTomyRegular;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 23px;
     color: black;
+    text-align: center;
 }
-footer{
+.footer-box{
+    display: none;
+}
+.footer-mobile-box{
+    display: block;
     background-color: black;
     background-image: url("../../img/footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
 }
-.footer{
-    padding: 1rem 0 2rem 0;
+.footer-mobile{
+    padding: 1.5rem 0 2rem 0;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
-.footer__logo{
-    flex-basis: 30%;
+.footer-mobile__logo{
+    flex-basis: 33%;
 }
-.footer__logo__img{
+.footer-mobile__logo__img{
     width: 100px;
+    display: block;
+    margin: 0 auto;
 }
-.footer__block{
+.footer-mobile-block{
+    flex-basis: 33%;
     font-family: MadeTomyRegular;
     font-style: normal;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 15px;
-    padding: 0rem 1rem;
+    padding: 0rem;
     color: white;
 }
-.footer__block p{
+.footer-mobile-block p{
     color: white;
     margin: 0.5rem 0rem;
 }
+.footer-mobile-block .footer-mobile-text{
+    margin: 1rem 0rem;
+}
+.footer-mobile-icon{
+    font-size: 16px;
+}
+
+
 .float{
     position:fixed;
-    width:60px;
-    height:60px;
+    width:55px;
+    height:55px;
     bottom: 7px;
     right: 20px;
     background-color:#25d366;
     color:#FFF;
     border-radius:50px;
     text-align:center;
-    font-size:30px;
+    font-size: 30px;
     box-shadow: 2px 2px 3px rgb(51, 51, 51);
     z-index: 1000;
 }
@@ -101,26 +117,11 @@ footer{
     color:#FFF;
 }
 .my-float{
-	margin-top:16px;
+	margin-top: 12px;
 }
 @media screen and (min-width: 480px){
-    footer{
-        padding: 0.5rem 0;
-        padding-bottom: 20px;
-    }
-    .footer{
-        flex-flow: row wrap;
-        justify-content: space-around;
-        padding: 1rem 0 2.5rem 0;
-    }
-    .footer-blocks{
-        flex-basis: 30%;
-    }
-    .footer__logo__img{
-        display: block;
-        width: 140px;
-        padding-right: 0px;
-        margin: 0 auto;
+    .footer-mobile__logo__img{
+        width: 120px;
     }
 }
 @media screen and (min-width: 768px){
@@ -129,6 +130,23 @@ footer{
     }
     .logo-img{
         width: 120px;
+    }
+    .footer-mobile-box{
+        display: none;
+    }
+    .footer-box{
+        display: block;
+        background-color: black;
+        background-image: url("../../img/footer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 20px;
+    }
+    .footer{
+        padding: 1rem 0 2rem 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
     }
     .footer__logo{
         flex-basis: 20%;
@@ -149,6 +167,19 @@ footer{
     .footer__block{
         display: flex;
         flex-flow: column nowrap;
+        font-family: MadeTomyRegular;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0rem 1rem;
+        color: white;
+    }
+    .footer__block p{
+        color: white;
+        margin: 0.5rem 0rem;
+    }
+    .footer-icon{
+        font-size: 18px;
     }
 }
 @media screen and (min-width: 992px){
@@ -163,6 +194,12 @@ footer{
         background-image: url("../../img/section-a.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: MadeTomyRegular;
+        font-size: 18px;
     }
     .header-section{
         height: 100vh;
@@ -181,9 +218,6 @@ footer{
     .navbar-collapse{
         justify-content: flex-end;
     }
-    .navbar{
-        padding: 0 1rem 0 2rem;
-    }
     .navbar-brand{
         width: 150px;
     }
@@ -191,20 +225,32 @@ footer{
         width: 120px;
         margin-left: 2rem;
     }
-    footer{
+    .footer-box{
         padding-bottom: 25px;
     }
     .footer{
         padding: 1.5rem 0 2.5rem 0;
     }
+    .footer__logo__img{
+        width: 170px;
+    }
     .footer__block{
         font-family: MadeTomyMedium;
+        width: 100%;
     }
     .footer__block p{
         font-size: 1rem;
     }
-    .footer__block a:hover{
+    .footer-link{
+        display: flex;
+        align-items: center;
+    }
+    .footer-link:hover{
         text-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+    }
+    .footer-icon{
+        font-size: 28px;
+        padding: 0 0.75rem;
     }
     .float{
         width:70px;
@@ -213,11 +259,14 @@ footer{
     }
 }
 @media screen and (min-width: 1200px){
-    footer{
+    .footer-box{
         padding-bottom: 20px;
     }
     .footer{
         padding: 2.5rem 0 3.5rem 0;
+    }
+    .footer-icon{
+        font-size: 30px;
     }
     .float{
         width:80px;

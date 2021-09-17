@@ -348,11 +348,12 @@
         font-size: 16px;
     }
     .carousel-item{
-        height: 630px;
+        height: 85vh;
     }
     .carousel-item__img{
         margin: 30px 0 30px 10%;
         width: 30%;
+        display: block;
     }
     .carousel-item__text__container{
         top: 190px;
@@ -369,5 +370,16 @@
         width: 200px;
         font-size: 24px;
         line-height: 40px;
+    }
+}
+@media screen and (min-width: 1600px){
+    .carousel-item__img{
+        margin: 30px 0 30px 15%;
+        width: 25%;;
+    }
+}
+@media screen and (min-width: 1850px){
+    .carousel-item{
+        height: 95vh;
     }
 }
