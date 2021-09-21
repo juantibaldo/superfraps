@@ -44,8 +44,61 @@
         </header>
         
         <section>
-
+            <div class="contact-banner"> </div>
         </section>
+
+        <div class="content">
+    
+            <div class="container">
+              <div class="row align-items-stretch no-gutters contact-wrap">
+                <div class="col-md-12">
+                  <div class="form h-100">
+                    <h3 class="contact__title">Contactanos!</h3>
+                    <form class="mb-5 contact__info" method="post" id="contactForm" name="contactForm" action="../enviar.php">
+                      <div class="row">
+                        <div class="col-md-6 form-group mb-3">
+                          <label for="" class="col-form-label">Nombre Completo</label>
+                          <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                          <label for="" class="col-form-label">Email</label>
+                          <input type="text" class="form-control" name="email" id="email"  placeholder="Tu email" required>
+                        </div>
+                      </div>
+        
+                      <div class="row">
+                        <div class="col-md-12 form-group mb-3">
+                          <label for="" class="col-form-label">Asunto</label>
+                          <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto" required>
+                        </div>
+                      </div>
+        
+                      <div class="row">
+                        <div class="col-md-12 form-group mb-3">
+                          <label for="message" class="col-form-label">Mensaje</label>
+                          <textarea class="form-control" name="msj" id="msj" cols="30" rows="4"  placeholder="Escriba aquí su mensaje"></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 form-group text-right">
+                          <input type="submit" value="Enviar" id="sendForm" class="btn btn-primary rounded-0 py-2 px-4">
+                          <span class="submitting"></span>
+                        </div>
+                      </div>
+                    </form>
+        
+                    <div id="form-message-warning mt-4"></div> 
+                    <div id="form-message-success">
+                      Your message was sent, thank you!
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+
 
         <!--WHATSAPP ICON-->
         <section>
