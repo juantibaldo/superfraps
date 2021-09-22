@@ -120,8 +120,8 @@
         font-size: 17px;
     }
     .eco-container{
-        width: 70%;
-        margin: 3rem auto 0 auto;
+        width: 85%;
+        margin: 3rem auto;
     }
     .eco-unit{
         flex-basis: 32%;
@@ -129,8 +129,10 @@
     }
     .eco-unit__title{
         font-size: 26px;
+        line-height: 30px;
     }
     .eco-unit__text{
         font-size: 16px;
+        line-height: 16px;
     }
 }
