@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <!--GOOGLE FONTS-->
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <!--ANIMACION ANIMATE.CSS-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <!--ICONOS-->
@@ -120,35 +118,61 @@
             </div>
         </section>
 
-        <!--SECTION-->
+        <!--SECTION D-->
         <section class="container-fluid p-0">
             <div id="carouselHome" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselHome" data-slide-to="1"></li>
+                    <li data-target="#carouselHome" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active carousel-item__smoothies">
-                        <div class="carousel-item__text__container">
-                            <p class="carousel-item__text">Smoothies</p>
+                        <div class="carousel-items-mobile w-100">
+                            <p class="carousel-items-mobile__title">Smoothies</p>
+                            <img src="./img/smoothies.png" class="d-block carousel-items-mobile__img" alt="Smoothies">
+                            <a type="button" class="btn btn-light carousel-items-mobile__btn" href="./views/productos.html#smoothies">Ver todos</a>
                         </div>
-                        <img src="./img/smoothies.png" class="d-block carousel-item__img" alt="Smoothies">
-                        <div class="carousel-item__btn__container">
-                            <a type="button" class="btn btn-light carousel-item__btn" href="./views/productos.html#smoothies">Ver todos</a>
+                        <div class="carousel-items-desktop w-100">
+                            <div class="carousel-items-desktop__img">
+                                <img src="./img/smoothies.png" class="d-block" alt="Smoothies">
+                            </div>
+                            <div class="carousel-items-desktop__text">
+                                <p class="carousel-items-desktop__title">Smoothies</p>
+                                <a type="button" class="btn btn-light carousel-items-desktop__btn" href="./views/productos.html#smoothies">Ver todos</a>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item carousel-item__malteada">
-                        <div class="carousel-item__text__container">
-                            <p class="carousel-item__text">Malteadas</p>
+                        <div class="carousel-items-mobile w-100">
+                            <p class="carousel-items-mobile__title">Malteadas</p>
+                            <img src="./img/malteadas.png" class="d-block carousel-items-mobile__img" alt="Malteadas">
+                            <a type="button" class="btn btn-light carousel-items-mobile__btn" href="./views/productos.html#malteadas">Ver todos</a>
                         </div>
-                        <img src="./img/malteadas.png" class="d-block carousel-item__img" alt="Malteadas">
-                        <div class="carousel-item__btn__container">
-                            <a type="button" class="btn btn-light carousel-item__btn" href="./views/productos.html#malteadas">Ver todos</a>
+                        <div class="carousel-items-desktop w-100">
+                            <div class="carousel-items-desktop__img">
+                                <img src="./img/malteadas.png" class="d-block" alt="Malteadas">
+                            </div>
+                            <div class="carousel-items-desktop__text">
+                                <p class="carousel-items-desktop__title">Malteadas</p>
+                                <a type="button" class="btn btn-light carousel-items-desktop__btn" href="./views/productos.html#malteadas">Ver todos</a>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item carousel-item__frozen">
-                        <div class="carousel-item__text__container">
-                            <p class="carousel-item__text">Frozen Tea</p>
+                        <div class="carousel-items-mobile w-100">
+                            <p class="carousel-items-mobile__title">Frozen Tea</p>
+                            <img src="./img/frozen tea.png" class="d-block carousel-items-mobile__img" alt="Frozen Tea">
+                            <a type="button" class="btn btn-light carousel-items-mobile__btn" href="./views/productos.html#frozen-tea">Ver todos</a>
                         </div>
-                        <img src="./img/frozen tea.png" class="d-block carousel-item__img" alt="Frozen Tea">
-                        <div class="carousel-item__btn__container">
-                            <a type="button" class="btn btn-light carousel-item__btn" href="./views/productos.html#frozen-tea">Ver todos</a>
+                        <div class="carousel-items-desktop w-100">
+                            <div class="carousel-items-desktop__img">
+                                <img src="./img/frozen tea.png" class="d-block" alt="Frozen Tea">
+                            </div>
+                            <div class="carousel-items-desktop__text">
+                                <p class="carousel-items-desktop__title">Frozen Tea</p>
+                                <a type="button" class="btn btn-light carousel-items-desktop__btn" href="./views/productos.html#frozen-tea">Ver todos</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,7 +186,7 @@
                 </a>
             </div>
         </section>
-
+        
         <!--WHATSAPP ICON-->
         <section>
             <div class="wapp-box">
