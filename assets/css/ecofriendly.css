@@ -9,7 +9,7 @@
     text-align: center;
     padding: 1.5rem 1rem;
     background-color: rgb(124, 178, 43);
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
 }
 .eco__banner__text__title{
@@ -17,6 +17,7 @@
     font-size: 28px;
     line-height: 30px;
     margin-bottom: 20px;
+    color: rgb(255, 255, 255);
 }
 .eco__banner__text__sentence{
     font-family: MadeTomyRegular;

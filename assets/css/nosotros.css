@@ -12,10 +12,11 @@
     bottom: 0;
     left: 0;
     padding: 1.5rem;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .nos__banner__text__title{
     font-family: MadeTomyBold;
+    color: rgb(255, 255, 255);
     font-size: 36px;
     line-height: 45px;
     margin-bottom: 20px;
@@ -52,7 +53,7 @@
 .nos__mision__mobile__text{
     text-align: center;
     padding: 1.5rem;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
 }
 .first-text{
@@ -63,6 +64,7 @@
 }
 .nos__mision__mobile__text__title{
     font-family: MadeTomyBold;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 10px;
@@ -169,7 +171,11 @@
         flex-flow: row wrap;
     }
     .nos__mision__text{
+        color: rgb(255, 255, 255);
         flex-basis: 50%;
+    }
+    .nos__mision__text__title{
+        color: rgb(255, 255, 255);
     }
     .nos__mision__img{
         width: 50%;
@@ -177,7 +183,7 @@
     .nos__mision__text{
         text-align: center;
         padding: 1.5rem;
-        color: white;
+        color: rgb(255, 255, 255);
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -232,6 +238,9 @@
     }
 }
 @media screen and (min-width: 992px){
+    .nos__banner__img{
+        min-height: 480px;
+    }
     .nos__banner__text{
         width: 70%;
     }
@@ -278,6 +287,9 @@
     }
 }
 @media screen and (min-width: 1200px){
+    .nos__banner__img{
+        min-height: 520px;
+    }
     .nos__banner__text{
         padding-left: 2.5rem;
         width: 60%;
@@ -313,7 +325,7 @@
 }
 @media screen and (min-width: 1600px){
     .nos__banner__img{
-        min-height: 520px;
+        min-height: 620px;
     }
     .nos__banner__text{
         width: 52%;
@@ -358,5 +370,10 @@
     }
     .nos__values__boxes__text-family{
         font-size: 21px;
+    }
+}
+@media screen and (min-width: 1850px){
+    .nos__banner__img{
+        min-height: 720px;
     }
 }

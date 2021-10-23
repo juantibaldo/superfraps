@@ -45,6 +45,6 @@ $mail->SMTPOptions = array(
 if(!$mail->send()){
     echo "Mailer Error: " . $mail->ErrorInfo;
 }else{
-    header("Location:index.html");
+    header("Location:./views/msgsent.html");
 }
 ?>
