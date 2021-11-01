@@ -1,11 +1,15 @@
 .eco__banner__img{
+    padding: 0;
+    height: 65vh;
+    background-color: rgb(124, 178, 43);
     background-image: url("../../img/ECO_BANNER.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 440px;
 }
 .eco__banner__text{
+    width: 100%;
+    margin: 0;
     text-align: center;
     padding: 1.5rem 1rem;
     background-color: rgb(124, 178, 43);
@@ -22,7 +26,7 @@
 .eco__banner__text__sentence{
     font-family: MadeTomyRegular;
     font-size: 14px;
-    line-height: 17px;
+    line-height: normal;
 }
 .eco-container{
     display: flex;
@@ -47,9 +51,13 @@
 .eco-unit__text{
     font-family: MadeTomyRegular;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.4;
+    color: rgb(23, 24, 26);
 }
 @media screen and (min-width: 480px){
+    .eco__banner__img{
+        height: 68vh;
+    }
     .eco__banner__text__title, .eco__banner__text__sentence{
         width: 70%;
         margin: 0 auto;
@@ -70,12 +78,17 @@
         font-size: 16px;
     }
 }
+@media screen and (min-width: 570px){
+    .eco__banner__img{
+        height: 70vh;
+    }
+}    
 @media screen and (min-width: 768px){
     .eco__banner__img{
-        min-height: 470px;
+        height: 68vh;
     }
     .eco__banner__text__title, .eco__banner__text__sentence{
-        width: 40%;
+        width: 60%;
     }
     .eco__banner__text__title{
         font-size: 36px;
@@ -104,14 +117,8 @@
     }
 }
 @media screen and (min-width: 992px){
-    .eco__banner__img{
-        min-height: 520px;
-    }
-    .eco__banner__text{
-        padding: 3rem 1rem;
-    }
     .eco__banner__text__title, .eco__banner__text__sentence{
-        width: 30%;
+        width: 50%;
     }
     .eco__banner__text__title{
         font-size: 42px;
@@ -134,6 +141,16 @@
     }
     .eco-unit__text{
         font-size: 16px;
-        line-height: 16px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .eco__banner__img{
+        height: 65vh;
+    }
+    .eco__banner__text__sentence{
+        font-size: 20px;
+    }
+    .eco-unit__text{
+        font-size: 18px;
     }
 }

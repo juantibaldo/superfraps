@@ -1,6 +1,17 @@
 .section-a{
-    width: 100vw;
-    height: 450px;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(220, 229, 228);
+    background-image: url("../../img/section1-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-a__img{
+    width: 90%;
 }
 .section-a-lg{
     display: none;
@@ -70,6 +81,7 @@
     font-size: 14px;
     width: 75%;
     margin: 0 auto 0 auto;
+    line-height: normal;
 }
 .carousel-caption{
     color: rgb(0, 0, 0);
@@ -124,8 +136,8 @@
     text-align: center;
 }
 .carousel-items-mobile__img{
-    margin: 5px 0 10px 15%;
-    width: 50%;
+    margin: 5px 0 10px 9%;
+    width: 60%;
 }
 .carousel-items-mobile__btn{
     display: block;
@@ -143,12 +155,8 @@
     display: none;
 }
 @media screen and (min-width: 480px){
-    .section-a{
-        display: none;
-    }
-    .section-a-lg{
-        display: block;
-        width: 100vw;
+    .section-a__img{
+        width: 400px;
     }
     .section-c__blocks{
         display: flex;
@@ -177,7 +185,8 @@
         width: 50%;
     }
     .carousel-items-mobile__img{
-        margin: 5px 0 10px 17%;
+        margin: 5px 0 10px 15%;
+        width: 50%;
     }
 }
 @media screen and (min-width: 768px){
@@ -276,8 +285,8 @@
 }
 @media screen and (min-width: 992px){
     .section-b{
-        padding-bottom: 30px;
-        padding-top: 30px;
+        padding: 30px 0 30px 0;
+        justify-content: center;
     }
     .section-b__img{
         padding: 0rem 0;
@@ -314,9 +323,11 @@
         width: 60px;
         height: 60px;
     }
-
     .carousel-items-desktop__img, .carousel-items-desktop__text{
         width: 35%;
+    }
+    .carousel-items-desktop__img img{
+        width: 90%;
     }
     .carousel-items-desktop__title{
         font-size: 120px;
@@ -328,6 +339,9 @@
     }
 }
 @media screen and (min-width: 1200px){
+    .section-b{
+        padding: 30px 0 30px 100px;
+    }
     .section-b__img{
         width: 70%;
     }
@@ -359,8 +373,11 @@
     .section-c__text__sentence{
         font-size: 16px;
     }
+    .carousel-items-desktop__img{
+        width: 30%;
+    }
     .carousel-items-desktop__img img{
-        width: 90%;
+        width: 80%;
     }
     .carousel-items-desktop__title{
         font-size: 150px;
@@ -377,8 +394,11 @@
     }
 }
 @media screen and (min-width: 1600px){
-    .carousel-items-desktop__img img{
-        width: 85%;
+    .section-b{
+        padding: 30px 0 30px 130px;
+    }
+    .section-b__img{
+        width: 75%;
     }
     .carousel-items-desktop__title{
         font-size: 180px;

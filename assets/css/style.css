@@ -216,6 +216,8 @@ a:hover{
         background-image: url("../../img/section-a.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
     }
     .navbar-expand-lg .navbar-nav .nav-link{
         padding-left: 1rem;
@@ -225,6 +227,7 @@ a:hover{
     }
     .header-section{
         height: 100vh;
+        min-height: 100vh;
     }
     .nav-992px{
         position: fixed;

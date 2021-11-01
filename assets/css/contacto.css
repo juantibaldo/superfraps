@@ -4,6 +4,7 @@
     background-image: url("../../img/palmtrees-lg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgb(222,224,221);
 }
 .contact__title{
   font-family: MadeTomyBold ;
@@ -11,7 +12,7 @@
 .text-black {
   color: #000; }
 .content {
-  padding: 7rem 0; }
+  padding: 2rem 0; }
 .heading {
   font-size: 2.5rem;
   font-weight: 900; }
@@ -76,7 +77,8 @@
       display: inline-block;
       padding: 0; }
     .contact-wrap .form, .contact-wrap .contact-info {
-      padding: 40px; }
+      padding: 40px;
+      padding-top: 10px; }
     .contact-wrap .contact-info {
       color: rgba(255, 255, 255, 0.5); }
       .contact-wrap .contact-info ul li {
@@ -140,7 +142,7 @@
   color: #000; }
 .msg-sent-box{
   text-align: center;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 1.5rem 0;
 }
 .msg-sent-icon{
   font-size: 40px;
