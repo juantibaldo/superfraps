@@ -1,6 +1,7 @@
 .section-a{
     width: 100%;
-    height: 90vh;
+    height: 88vh;
+    min-height: 88vh;
     background-color: rgb(220, 229, 228);
     background-image: url("../../img/section1-bg.jpg");
     background-size: cover;
@@ -12,6 +13,7 @@
 }
 .section-a__img{
     width: 90%;
+    margin-top: -20px;
 }
 .section-a-lg{
     display: none;

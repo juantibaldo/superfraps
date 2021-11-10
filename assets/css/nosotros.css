@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 78vh;
+    min-height: 76vh;
     position: relative;
 }
 .nos__banner__text{
@@ -130,12 +130,18 @@
 .nos__values__boxes__text-family{
     font-size: 14px;
 }
+@media screen and (min-width: 360px){
+    .nos__banner__text{
+        width: 90%;
+    }
+}
 @media screen and (min-width: 480px){
     .nos__banner__text{
         top: 0;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
+        width: 100%;
     }
     .nos__banner__text__sentence{
         margin: 0;

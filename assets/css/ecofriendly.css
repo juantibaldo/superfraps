@@ -1,6 +1,7 @@
 .eco__banner__img{
     padding: 0;
-    height: 65vh;
+    height: 63vh;
+    min-height: 63vh;
     background-color: rgb(124, 178, 43);
     background-image: url("../../img/ECO_BANNER.jpg");
     background-repeat: no-repeat;
@@ -8,7 +9,6 @@
     background-position: center;
 }
 .eco__banner__text{
-    width: 100%;
     margin: 0;
     text-align: center;
     padding: 1.5rem 1rem;
@@ -20,13 +20,14 @@
     font-family: MadeTomyBold;
     font-size: 28px;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     color: rgb(255, 255, 255);
 }
 .eco__banner__text__sentence{
     font-family: MadeTomyRegular;
     font-size: 14px;
     line-height: normal;
+    margin-bottom: 0;
 }
 .eco-container{
     display: flex;
@@ -56,14 +57,11 @@
 }
 @media screen and (min-width: 480px){
     .eco__banner__img{
-        height: 68vh;
+        height: 65vh;
     }
     .eco__banner__text__title, .eco__banner__text__sentence{
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
-    }
-    .eco__banner__text__title{
-        margin-bottom: 20px;
     }
     .eco-unit{
         flex-basis: 80%;
@@ -77,23 +75,15 @@
     .eco-unit__text{
         font-size: 16px;
     }
-}
-@media screen and (min-width: 570px){
-    .eco__banner__img{
-        height: 70vh;
-    }
-}    
+} 
 @media screen and (min-width: 768px){
-    .eco__banner__img{
-        height: 68vh;
-    }
     .eco__banner__text__title, .eco__banner__text__sentence{
         width: 60%;
     }
     .eco__banner__text__title{
         font-size: 36px;
         line-height: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .eco__banner__text__sentence{
         font-size: 16px;
@@ -144,9 +134,6 @@
     }
 }
 @media screen and (min-width: 1200px){
-    .eco__banner__img{
-        height: 65vh;
-    }
     .eco__banner__text__sentence{
         font-size: 20px;
     }
