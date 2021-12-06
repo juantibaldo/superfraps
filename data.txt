@@ -1,1 +1,0 @@
-gris oscuro rgb(33, 37, 41);
